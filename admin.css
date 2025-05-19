@@ -1,0 +1,146 @@
+:root {
+    --primary: #1a7b88;
+    --primary-light: #75c6d1;
+    --secondary: #f6c90e;
+    --dark: #2d3436;
+    --light: #f8f9fa;
+    --text: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--light);
+    color: var(--text);
+    
+}
+
+header h1 {
+    text-align: center;
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+.table-section {
+    padding: 20px;
+}
+
+.table-container {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: var(--primary);
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid var(--primary-light);
+    text-align: left;
+}
+
+th {
+    background-color: var(--primary-light);
+    color: var(--dark);
+}
+
+td {
+    background-color: var(--light);
+}
+
+tr:hover {
+    background-color: var(--primary-light);
+}
+
+.delete-btn, .edit-btn {
+    padding: 5px 10px;
+    background-color: var(--primary);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover, .edit-btn:hover {
+    background-color: var(--secondary);
+}
+
+.form-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(26, 123, 136, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;  /* Limite la largeur du formulaire */
+    margin: 0 auto;  /* Centre le formulaire */
+}
+
+h2 {
+    font-size: 1.6em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--primary);
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid var(--primary-light);
+    border-radius: 8px;
+    font-size: 1em;
+    background-color: var(--light);
+    color: var(--text);
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: var(--primary);
+    outline: none;
+}
+
+form button {
+    padding: 12px;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+form button:hover {
+    background-color: var(--secondary);
+    transform: scale(1.05);
+}
+
+form button:active {
+    transform: scale(0.95);
+}
+
+@media (max-width: 768px) {
+    .table-container {
+        overflow-x: auto;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+}
+

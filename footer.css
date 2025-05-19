@@ -1,0 +1,21 @@
+:root {
+  --primary: #1a7b88;
+  --primary-light: #75c6d1;
+  --secondary: #f6c90e;
+  --dark: #2d3436;
+  --light: #f8f9fa;
+  --text: #333333;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --radius: 8px;
+}
+
+.footer-bottom {
+  background-color: var(--dark);
+  color: white;
+  padding: 60px 0 30px;
+  text-align: center;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  opacity: 0.7;
+  font-size: 0.9rem;
+}

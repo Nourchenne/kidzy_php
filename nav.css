@@ -1,0 +1,58 @@
+/* Container principal du navbar */
+nav {
+  background-color: #333; /* Couleur de fond du navbar */
+  padding: 10px 20px; /* Espacement interne */
+  position: fixed; /* Rendre le navbar fixe */
+  top: 0; /* Positionner le navbar en haut */
+  left: 0; /* S'assurer que le navbar commence à gauche */
+  width: 100%; /* Faire en sorte que le navbar prenne toute la largeur */
+  z-index: 1000; /* S'assurer que le navbar soit au-dessus des autres éléments */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajouter une ombre légère pour séparer le navbar du contenu */
+}
+
+/* Ajouter une marge top au contenu pour éviter qu'il ne soit masqué par la navbar fixe */
+body {
+  margin-top: 60px; /* Ajuste cette valeur selon la hauteur de ton navbar */
+}
+
+/* Conteneur du contenu du navbar */
+.nav-container {
+  display: flex;
+  justify-content: space-between; /* Espacement entre les éléments */
+  align-items: center; /* Alignement vertical */
+}
+
+/* Logo du navbar */
+.nav-container .logo {
+  width: 100px; /* Taille du logo */
+  height: auto; /* Maintenir le ratio du logo */
+}
+
+/* Liens de navigation */
+.nav-links {
+  display: flex;
+  gap: 20px; /* Espace entre les liens */
+}
+
+.nav-links a {
+  color: #fff; /* Couleur des liens */
+  text-decoration: none; /* Supprimer le soulignement */
+  font-size: 18px; /* Taille de la police */
+  transition: color 0.3s; /* Transition pour changement de couleur */
+}
+
+.nav-links a:hover {
+  color: #f1c40f; /* Couleur au survol des liens */
+}
+
+/* Icône utilisateur */
+.nav-container a img {
+  width: 50px; /* Taille de l'icône de l'utilisateur */
+  height: 50px; /* Taille de l'icône de l'utilisateur */
+  border-radius: 50%; /* Arrondir l'icône */
+  transition: transform 0.3s ease; /* Transition pour l'animation */
+}
+
+.nav-container a:hover img {
+  transform: scale(1.1); /* Agrandir l'icône au survol */
+}
